@@ -27,11 +27,18 @@ main_menu = Templex.new
 
 #### window method:
 
-`window` method, changes terminal window `width` and `height`. Also `format` argument set attributes for window; change background color, set bold, colorized text...
+`window` method, changes terminal window `width` and `height`. Also `format` parameter set attributes for window; change background color, set bold, colorized text...
 
 ```
 main_menu.window( width:Integer, height:Integer, format:[Integer,Integer,...] )
 ```
+
+| Parameter   | Default | Must Be | 
+| :-----------|:------- | :-----  |
+| `width`     | 80      | Integer |
+| `height`    | 30      | Integer |
+| `format`    | null    | Array   |
+
 for example:
 ```
 main_menu.window(width:100, height:30, format:[1,100])
@@ -39,14 +46,12 @@ main_menu.window(width:100, height:30, format:[1,100])
 
 ![window method example](./asset/windowmethod.gif)
 
->width and height must be a integer, format must be; [Integer,Integer,...]
-
 What about `format`? What is 1 and 100?
 
 1,100,32,etc. are bash codes!
 1 is bold, 100 is gray for background, 32 is green for Foreground(text).
 
-So, `format:[1,100]` changes background and set bold text, Like CSS:
+So, `format:[1,100]` changes background color and set bold text, Like CSS:
 ```
 body{
 
