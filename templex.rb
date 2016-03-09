@@ -1,9 +1,15 @@
 class Templex
 
+  def initialize
+    @window_width = 80
+    @window_height = 30
+    print "\e[8;#{@window_height};#{@window_width}t"
+  end
+
   def window(**values)
 
-    @window_width  = (values.include? :width) ? values[:width].to_i : 80
-    @window_height = (values.include? :height) ? values[:height].to_i : 30
+    @window_width  = values[:width] if(values.include? :width)
+    @window_height = values[:height] if(values.include? :height)
 
     if( values[:format].is_a? Array )
 
