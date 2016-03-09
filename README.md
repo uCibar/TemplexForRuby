@@ -30,14 +30,14 @@ main_menu = Templex.new
 `window` method, changes terminal window `width` and `height`. Also `format` parameter set attributes for window; change background color, set bold, colorized text...
 
 ```
-main_menu.window( width:Integer, height:Integer, format:[Integer,Integer,...] )
+main_menu.window( width:Integer, height:Integer, format:[Bashcode,Bashcode,...] )
 ```
 
 | Parameter   | Default | Must Be | 
 | :-----------|:------- | :-----  |
 | `width`     | 80      | Integer |
 | `height`    | 30      | Integer |
-| `format`    | null    | Array   |
+| `format`    | ""      | Array   |
 
 for example:
 ```
