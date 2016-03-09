@@ -36,6 +36,9 @@ for example:
 ```
 main_menu.window(width:100, height:30, format:[1,100])
 ```
+
+![window method example](./asset/windowmethod.gif)
+
 >width and height must be a integer, format must be; [Integer,Integer,...]
 
 What about `format`? What is 1 and 100?
