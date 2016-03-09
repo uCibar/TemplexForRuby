@@ -25,7 +25,7 @@ main_menu = Templex.new
 
 
 
-#### window method:
+### window method:
 
 `window` method, changes terminal window `width` and `height`. Also `format` parameter set attributes for window; change background color, set bold, colorized text...
 
@@ -79,5 +79,5 @@ end
 
 main_manu.window(width:70, height:40, format:[Colors::RED, Colors::BOLD])
 ```
-#### line method:
+### line method:
 >Coming Soon!
