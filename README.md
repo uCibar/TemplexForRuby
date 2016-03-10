@@ -152,15 +152,25 @@ output:
 HelloWorld
 ```
 
-Title with `newLine`:
+Title with `margin`:
 ```
-text:"Hello" #no center:true
-newLine
-text:"World" #no center:true
+text:"Hello" margin:2
+text:"World" margin:5
 ```
 output:
 ```
-Hello
+  Hello     World
+```
+
+Title with `newLine`:
+```
+text:"Hello" margin:3
+newLine
+text:"World"
+```
+output:
+```
+   Hello
 World
 ```
 
