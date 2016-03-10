@@ -46,6 +46,8 @@ main_menu.window(width:100, height:30, format:[1,100])
 
 ![window method example](./asset/windowmethod.gif)
 
+###Formatting
+
 What about `format`? What is 1 and 100?
 
 1,100,32,etc. are bash codes!
