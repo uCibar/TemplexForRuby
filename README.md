@@ -98,9 +98,24 @@ main_menu.line( text:String, margin:Integer, format:[Bashcode,Bashcode,...] )
 for example:
 
 ```
-view.line(text:"#-#", margin:10, format:[31])
+main_menu.line(text:"#-#", margin:10, format:[31])
 ```
 
 ![line method example](./asset/linemethod.gif)
 
 `format:[31]` set red text color...
+
+### newLine method:
+
+If you do not want to be side by side text, use `newLine` method. There is not parameter or someting else. Just write it:
+`main_menu.newLine`
+
+`line` method automatically add `newLine`, so you dont have to add. Also you can use for line space.
+
+### title method:
+
+Draw a text, set attributes for text; text color, etc. set text margin and if you want, center the text.
+
+```
+main_menu.title(text:String, center:boolean, margin:Integer, format:[You know it])
+```
