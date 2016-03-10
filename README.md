@@ -79,5 +79,14 @@ end
 
 main_manu.window(width:70, height:40, format:[Colors::RED, Colors::BOLD])
 ```
+
 ### line method:
->Coming Soon!
+
+`line` method, draws a line, like border! `text` parameter set your text, `margin` parameter set margin; 10,15,etc. `format` parameter
+set attributes for line; background color, text color, etc.
+
+| Parameter   | Default | Must Be                           | 
+| :-----------|:------- | :---------------------------------|
+| `text`      | null    | String and not empty string; ""   |
+| `margin`    | 0       | Integer                           |
+| `format`    | ""      | Array                             |
