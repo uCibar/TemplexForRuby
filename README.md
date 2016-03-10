@@ -102,3 +102,5 @@ view.line(text:"#-#", margin:10, format:[31])
 ```
 
 ![line method example](./asset/linemethod.gif)
+
+`format:[31]` set red text color...
