@@ -163,3 +163,6 @@ output:
 Hello
 World
 ```
+
+And here is the gif:
+![line method example](./asset/titlemethod01.gif)
