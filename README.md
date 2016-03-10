@@ -119,3 +119,47 @@ Draw a text, set attributes for text; text color, etc. set text margin and if yo
 ```
 main_menu.title(text:String, center:boolean, margin:Integer, format:[You know it])
 ```
+
+| Parameter   | Default | Must Be                           | 
+| :-----------|:------- | :---------------------------------|
+| `text`      | null    | String and not empty string; ""   |
+| `center`    | false   | true or false                     |
+| `margin`    | 0       | Integer                           |
+| `format`    | ""      | Array                             |
+
+- if you dont want centered text, you dont have to write `center:false`. `center` default `false`. 
+- You shouldn't use `center:true` and `margin` together. Because `center:true` adjust `margin` automatically. So your `margin` unneeded.
+- `center:true` adds `newLine` automatically.for example:
+
+Title with `center:true`:
+```
+text:"Hello", center:true
+text:"World", center:true
+```
+output:
+```
+Hello
+World
+```
+
+Title with `center:false`:
+```
+text:"Hello" #no center:true
+text:"World" #no center:true
+```
+output:
+```
+HelloWorld
+```
+
+Title with `newLine`:
+```
+text:"Hello" #no center:true
+newLine
+text:"World" #no center:true
+```
+output:
+```
+Hello
+World
+```
