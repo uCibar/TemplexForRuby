@@ -1,5 +1,5 @@
 # TemplexForRuby
-Templex is a view class for terminal applications.
+Templex is a view class for ruby terminal applications.
 
 ## Usage
 
@@ -85,8 +85,20 @@ main_manu.window(width:70, height:40, format:[Colors::RED, Colors::BOLD])
 `line` method, draws a line, like border! `text` parameter set your text, `margin` parameter set margin; 10,15,etc. `format` parameter
 set attributes for line; background color, text color, etc.
 
+```
+main_menu.line( text:String, margin:Integer, format:[Bashcode,Bashcode,...] )
+```
+
 | Parameter   | Default | Must Be                           | 
 | :-----------|:------- | :---------------------------------|
 | `text`      | null    | String and not empty string; ""   |
 | `margin`    | 0       | Integer                           |
 | `format`    | ""      | Array                             |
+
+for example:
+
+```
+view.line(text:"#-#", margin:10, format:[31])
+```
+
+![line method example](./asset/linemethod.gif)
