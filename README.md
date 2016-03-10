@@ -16,7 +16,7 @@ Include Templex in your project:
 require 'TemplexForRuby/templex'
 ```
 
-New Instance:
+New instance:
 ```
 main_menu = Templex.new
 ```
@@ -39,7 +39,7 @@ main_menu.window( width:Integer, height:Integer, format:[Bashcode,Bashcode,...] 
 | `height`    | 30      | Integer |
 | `format`    | ""      | Array   |
 
-for example:
+**for example:**
 ```
 main_menu.window(width:100, height:30, format:[1,100])
 ```
@@ -49,7 +49,7 @@ main_menu.window(width:100, height:30, format:[1,100])
 What about `format`? What is 1 and 100?
 
 1,100,32,etc. are bash codes!
-1 is bold, 100 is gray for background, 32 is green for Foreground(text).
+1 is bold, 100 is gray for background, 32 is green for foreground(text).
 
 So, `format:[1,100]` changes background color and set bold text, Like CSS:
 ```
@@ -95,7 +95,7 @@ main_menu.line( text:String, margin:Integer, format:[Bashcode,Bashcode,...] )
 | `margin`    | 0       | Integer                           |
 | `format`    | ""      | Array                             |
 
-for example:
+**for example:**
 
 ```
 main_menu.line(text:"#-#", margin:10, format:[31])
@@ -110,11 +110,13 @@ main_menu.line(text:"#-#", margin:10, format:[31])
 If you do not want to be side by side text, use `newLine` method. There is not parameter or someting else. Just write it:
 `main_menu.newLine`
 
-`line` method automatically add `newLine`, so you dont have to add. Also you can use for line space.
+`line` method automatically add `newLine`, so you dont have to add.
+
+Also you can use for line space.
 
 ### title method:
 
-Draw a text, set attributes for text; text color, etc. set text margin and if you want, center the text.
+Draw a text, set attributes for text; text color, etc. Set text margin and if you want, center the text.
 
 ```
 main_menu.title(text:String, center:boolean, margin:Integer, format:[You know it])
@@ -127,11 +129,11 @@ main_menu.title(text:String, center:boolean, margin:Integer, format:[You know it
 | `margin`    | 0       | Integer                           |
 | `format`    | ""      | Array                             |
 
-- if you dont want centered text, you dont have to write `center:false`. `center` default `false`. 
+- If you dont want centered text, you dont have to write `center:false`. `center` default `false`. 
 - You shouldn't use `center:true` and `margin` together. Because `center:true` adjust `margin` automatically. So your `margin` unneeded.
-- `center:true` adds `newLine` automatically.for example:
+- `center:true` adds `newLine` automatically.
 
-Title with `center:true`:
+**Title with `center:true`:**
 ```
 text:"Hello", center:true
 text:"World", center:true
@@ -142,7 +144,7 @@ Hello
 World
 ```
 
-Title with `center:false`:
+**Title with `center:false`:**
 ```
 text:"Hello" #no center:true
 text:"World" #no center:true
@@ -152,7 +154,7 @@ output:
 HelloWorld
 ```
 
-Title with `margin`:
+**Title with `margin`:**
 ```
 text:"Hello" margin:2
 text:"World" margin:5
@@ -162,7 +164,7 @@ output:
   Hello     World
 ```
 
-Title with `newLine`:
+**Title with `newLine`:**
 ```
 text:"Hello" margin:3
 newLine
